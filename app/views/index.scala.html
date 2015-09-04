@@ -2,7 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Return to Tunguska &#9760</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="keywords" content="Bit manipulation,
+    TCP, UDP, HTTP, REST, WebSockets. HTML, XML, JSON
+    Akka Framework, Akka Cluster, Anorm, Play Framework, Angular JS,
+    Java, Objective C, Scala, Javascript, CSS, C, Swift,
+    IntelliJ, XCode, sbt, ssh, scp, Mac OS X, Linux, Windows 7">
+    <title>Dario A Lencina-Talarico &#9760</title>
     <link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("css/main.css")">
     <link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("lib/bootstrap/css/bootstrap.min.css")">
     <link rel="stylesheet" type="text/css" href="@routes.Assets.versioned("lib/bootstrap/css/bootstrap-theme.min.css")">
@@ -14,7 +20,9 @@
     <script src="@routes.Assets.versioned("lib/angular-ui-router/angular-ui-router.js")"></script>
     <script src="@routes.Assets.versioned("js/app.js")"></script>
 </head>
-<body>
+<body ng-app="bfa">
     @views.html.navbar()
+    <div ui-view></div>
+    <footer>Dario A Lencina Talarico 2015</footer>
 </body>
 </html>
