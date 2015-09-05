@@ -2,7 +2,7 @@
  * Created by darioalessandro on 9/3/15.
  */
 
-angular.module('bfa', ['ui.router'])
+angular.module('bfa', ['ui.router', 'ui.bootstrap'])
     .config(function($locationProvider){
         //$locationProvider.html5Mode(true).hashPrefix('!');
     })
@@ -13,7 +13,8 @@ angular.module('bfa', ['ui.router'])
     $stateProvider
         .state('resume', {
             url: "/resume",
-            templateUrl: "resume"
+            templateUrl: "resume",
+            controller : "ResumeController"
         })
         .state('portfolio', {
             url: "/portfolio",
